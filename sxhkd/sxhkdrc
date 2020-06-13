@@ -1,0 +1,161 @@
+
+#################################################################
+# SUPER + ... KEYS
+#################################################################
+
+#Atom
+super + e
+    atom
+
+#Conky-toggle
+super + c
+    conky-toggle
+
+#Oblogout
+super + x
+    oblogout
+
+#conflicts
+#Rofi theme selector
+#super + r
+#    rofi-theme-selector
+
+#DISCORD
+super + d
+    discord
+
+#MUSICplayer
+super + m
+   deadbeef 
+
+#KONSOLE
+super + Return
+    konsole 
+
+#Xkill
+super + Escape
+    xkill
+
+#################################################################
+# SUPER + SHIFT KEYS
+#################################################################
+
+#File-Manager
+super + shift + Return
+	thunar
+
+#dmenu
+super + shift + d
+	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=16'
+
+#reload sxhkd
+super + shift + s
+	pkill -USR1 -x sxhkd
+
+#################################################################
+# CONTROL + ALT KEYS
+#################################################################
+
+#File-Manager
+ctrl + alt + b
+     dolphin 
+
+#CherryTree
+ctrl + alt + c
+    cherrytree 
+
+#Firefox
+ctrl + alt + f
+     firefox
+
+#slim-lock
+ctrl + alt + k
+     slimlock
+
+#Slimlock
+super + k
+    slimlock
+
+#Xfce4-settings-manager
+ctrl + alt + m
+     xfce4-settings-manager
+
+#Rofi theme selector
+ctrl + alt + r
+  rofi-theme-selector
+
+#Termite
+ctrl + alt + Return
+    konsole 
+
+#termite
+ctrl + alt + t
+    konsole 
+
+#Xfce4-appfinder
+ctrl + alt + a
+    xfce4-appfinder
+
+#Xcfe4-TaskManager
+ctrl + shift + Escape
+    ksysguard
+
+#################################################################
+#     SCREENSHOTS
+#################################################################
+
+#Scrot
+Print
+    scrot 'ArcoLinux-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
+
+#screeenshooter
+ctrl + Print
+     xfce4-screenshooter
+
+#Gnome-Screenshot
+ctrl + shift + Print
+     gnome-screenshot -i
+
+
+#################################################################
+#     FUNCTION KEYS
+#################################################################
+
+#xfce4-terminal dropdown
+F12
+    xfce4-terminal --drop-down
+
+
+#################################################################
+#     MULTIMEDIA KEYS
+#################################################################
+
+#Raises volume
+XF86AudioRaiseVolume
+    amixer set Master 10%+
+
+#Lowers volume
+XF86AudioLowerVolume
+    amixer set Master 10%-
+
+#Mute
+XF86AudioMute
+    amixer -D pulse set Master 1+ toggle
+
+#########################
+#        POLYBAR        #
+#########################
+
+#Hide polybar
+super + y
+    polybar-msg cmd toggle
+
+#################################################################
+# CTRL + ALT KEYS
+#################################################################
+
+#Compton Toggle
+ctrl + alt + o
+    ~/.config/herbstluftwm/scripts/compton-toggle.sh
+
+#################################################################
